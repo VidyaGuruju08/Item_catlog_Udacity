@@ -1,0 +1,54 @@
+body {
+	background: linear-gradient(to bottom, black 0%,pink 50%,#000000 50%,pink 50%,black 100%);
+	background-size: cover; 
+	}
+.header {
+	text-align: center;
+	color: blue;
+}
+.pane {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+.single {
+	background-color:lightpink ;
+	text-align: center;
+	float:left;
+	display: block;
+	width:350px;
+	height: 470px;
+	border-color:black;
+	border-width:2px;
+	border-style: ridge;
+	margin-left: 3%;
+	margin-right: 1%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	}
+.single img {
+	text-align: center;
+	width:250px;
+	height:250px;
+	}
+.Dcrpt {
+	text-align: center;
+	text-decoration-style: bold;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+	}
+.para {
+	width: 300px;
+	text-align: center;
+	display: flex;
+	float: left;
+	text-align: center;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-left: 30px;
+	padding-bottom: 2px;
+	}
+		
