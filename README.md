@@ -12,25 +12,25 @@ Requires Python, pip, and you will need git  to be installed.
 
 ## Steps to run this application ##
 
--> Have Vagrant and Virtual Box installed on your machine.
--> Unzip the file and put the contents in the vagrant directory.
--> Launch the Vagrant box (VM).
+1. Have Vagrant and Virtual Box installed on your machine.
+2. Unzip the file and put the contents in the vagrant directory.
+3. Launch the Vagrant box (VM).
 	 $ vagrant up 
 	 $ vagrant ssh 
--> To Initialize Database and To initialize the SQLite database 
+4. To Initialize Database and To initialize the SQLite database 
 	 $ python database.py 
--> To load the initial sporting categories
+5. To load the initial sporting categories
 	$ python Clotsofmenu.py
 	Now categories and some items belong to that category are added.
--> To start the application or to run the project on the server
+6. To start the application or to run the project on the server
 	$ python Cproject.py
--> The web app will be running on your localhost at port 5001 ( http://localhost:5001/ )
--> Open the above mentioned link to use the web app.
--> You can only view the catalog without signing in.
--> To create, update and delete the items in the catlog, sign in using Google+.
--> To login using Google+
+7. The web app will be running on your localhost at port 5001 ( http://localhost:5001/ )
+8. Open the above mentioned link to use the web app.
+9. You can only view the catalog without signing in.
+10. To create, update and delete the items in the catlog, sign in using Google+.
+11. To login using Google+
 	http://localhost:5001/login to login to the app
--> To Use Google Authentication Services
+12. To Use Google Authentication Services
 	We will need a client_secret.json file.
 We can create an application to use Google's OAuth service at https://console.developers.google.com.
 After creating and downloading client_secret.json file, move it to the directory where it is accessible to the project file.
