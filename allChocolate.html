@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="pane">
+	<div class="header">
+	<h1>Royal Chocolates</h1>
+	<a href="{{ url_for('GDisconnect') }}">Log0ut</a>
+    </div>
+<a href="{{url_for('newChocolate', chocolate_id = chocolate.id ) }}">Create A new Chocolate</a>
+<div class="flash">
+	{% with messages = get_flashed_messages() %}
+	{% if messages %}
+	<ul>
+	{% for message in messages %}
+  	<li><strong>{{message}}</strong></li>
+  	{% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+</div>
+
+	{% for i in chocolate %}
+	<div class="single" align="center">
+		<div class="Dcrpt">
+			<a href='{{url_for('chocolateMenu',chocolate_id=i.id)}}'><h4>{{ i.name }}</h4></a>
+		</div>
+	<img src={{i.picture}}></br><br>
+	<a href='{{url_for('editChocolate', chocolate_id = i.id) }}'>Edit</a></br>
+	<a href = '{{url_for('deleteChocolate', chocolate_id = i.id) }}'>Delete</a><br>
+	</div>
+	{% endfor %}
+
+</div>
+</body>
+</html>
