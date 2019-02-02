@@ -24,12 +24,12 @@ Requires Python, pip, and you will need git  to be installed.
 	Now categories and some items belong to that category are added.
 6. To start the application or to run the project on the server
 	$ python Cproject.py
-7. The web app will be running on your localhost at port 5001 ( http://localhost:5001/ )
+7. The web app will be running on your localhost at port 5001 ( http://localhost:5005/ )
 8. Open the above mentioned link to use the web app.
 9. You can only view the catalog without signing in.
 10. To create, update and delete the items in the catlog, sign in using Google+.
 11. To login using Google+
-	http://localhost:5001/login to login to the app
+	http://localhost:5005/login to login to the app
 12. To Use Google Authentication Services
 	We will need a client_secret.json file.
 We can create an application to use Google's OAuth service at https://console.developers.google.com.
